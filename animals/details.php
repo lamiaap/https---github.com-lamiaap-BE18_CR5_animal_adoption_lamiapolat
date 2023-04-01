@@ -86,7 +86,7 @@ if ($_GET['id']) {
                         else if ($status == 'Adopted')
                             echo 
                             "<div class='card-footer text-center bg-danger'>
-                            <p class='h6'>Already Adopted</p>
+                            <p class='h6'>animal is adopted</p>
                             </div>"
                         ?> 
                             </div>
