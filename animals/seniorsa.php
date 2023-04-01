@@ -49,7 +49,7 @@ mysqli_close($connect);
             margin: auto;
         }
 
-        .img-thumbnail {
+        .img {
             width: 60px ;
             height: 60px ;
         }

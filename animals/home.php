@@ -61,7 +61,7 @@ mysqli_close($connect);
             margin: auto;
         }
 
-        .img-thumbnail {
+        .img{
             width: 60px;
             height: 60px ;
         }
@@ -72,7 +72,7 @@ mysqli_close($connect);
         }
 
         tr {
-            text-align: left;
+            text-align: right;
         }
     </style>
 </head>
