@@ -67,7 +67,7 @@ if ($_GET['id']) {
                         <p class='card-text'><b> Size: </b> <?php echo $size; ?></p>
                         </div>
                             <tr>
-                                <p class="h2">Do you really want to adopt this pet?</p>
+                                <p class="h2">Do you want to adopt this cutie pet?</p>
                             
                                 <td><button class='btn btn-success' type="submit">YES</button></td>
                                 <td><a href="home.php"><button class='btn btn-danger' type="button">NO</button></a></td>

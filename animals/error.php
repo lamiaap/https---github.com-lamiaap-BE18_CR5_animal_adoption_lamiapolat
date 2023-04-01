@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>cr5-lamiar</title>
+        <title>cr5-lamia</title>
         <?php require_once '../components/boot.php'?>    
     </head>
     <body>
