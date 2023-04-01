@@ -50,8 +50,8 @@ mysqli_close($connect);
         }
 
         .img-thumbnail {
-            width: 70px !important;
-            height: 70px !important;
+            width: 60px ;
+            height: 60px ;
         }
 
         td {
