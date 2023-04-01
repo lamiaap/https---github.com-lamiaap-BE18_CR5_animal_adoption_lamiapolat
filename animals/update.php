@@ -21,7 +21,6 @@ if ($_GET['id']) {
         $data = mysqli_fetch_assoc($result);
         $name = $data['name'];
         $picture = $data['picture'];
-        $supplier = $data['fk_supplierId'];
         $resultSup = mysqli_query($connect, "SELECT * FROM suppliers");
         $supList = "";
         if (mysqli_num_rows($resultSup) > 0) {

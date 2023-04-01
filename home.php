@@ -79,6 +79,7 @@ mysqli_close($connect);
             <img class="userImage" src="pictures/https://cdn.dribbble.com/users/1205252/screenshots/16000669/media/c14399882d901df924021e6bd9ab12f2.jpg?compress=1&resize=400x300/<?php echo $row['picture']; ?>" alt="">
             <p class="text-white">Hi <?php echo $row['first_name']; ?></p>
             <a href="animals/home.php">Available Pets</a>
+            <a href="animals/seniorsa.php">Senior Animals</a>
             <a href="update.php?id=<?php echo $_SESSION['user'] ?>">Update your profile</a>
             <a href="logout.php?logout">Sign Out</a>
 

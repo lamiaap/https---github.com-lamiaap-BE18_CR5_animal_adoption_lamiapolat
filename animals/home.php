@@ -2,18 +2,7 @@
 session_start();
 require_once '../components/db_connect.php';
 
-/*
-if (!isset($_SESSION['adm']) && !isset($_SESSION['user'])) {
-    header("Location: ../register.php");
-    exit;
-}
-if (!isset($_SESSION['adm']) && isset($_SESSION['user'])) {
-    $res = mysqli_query($connect, "SELECT * FROM user WHERE id=" . $_SESSION['user']);
-    $row1 = mysqli_fetch_array($res, MYSQLI_ASSOC);
-} else if (isset($_SESSION['adm']) && !isset($_SESSION['user'])) {
-    $res = mysqli_query($connect, "SELECT * FROM user WHERE id=" . $_SESSION['adm']);
-    $row1 = mysqli_fetch_array($res, MYSQLI_ASSOC);
-}*/
+
 
 $sql = "SELECT * FROM animals";
 $result = mysqli_query($connect, $sql);
@@ -73,8 +62,8 @@ mysqli_close($connect);
         }
 
         .img-thumbnail {
-            width: 70px !important;
-            height: 70px !important;
+            width: 60px;
+            height: 60px ;
         }
 
         td {
@@ -91,17 +80,14 @@ mysqli_close($connect);
 
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
     <li class="nav-item">
-    <a class="nav-link text-center" href="../home.php">Logged in as <?php echo $row['first_name'] . " " . $row['last_name'] ;?></a>
+    <a class="nav-link text-center" href="../home.php">homie <?php echo $row['first_name'] . " " . $row['last_name'] ;?></a>
     </li>
     </ul>
   </div>
 </nav>
 
 <body>
-    <div class="manageProduct w-75 mt-3">
-        <div class='mb-3'>
-            <a href="../animals/seniorsa.php"><button class='btn btn-success' type="button">Show Seniors</button></a>
-        </div>
+    
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 cont">
             <?= $tbody; ?>
         </div>
